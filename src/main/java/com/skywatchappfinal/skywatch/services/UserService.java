@@ -36,8 +36,7 @@ public class UserService {
     //Post Request
     public User createNewUser(User user){
 
-        User newUser = userRepository.save(user);
-        return newUser;
+        return userRepository.save(user);
     }
 
 

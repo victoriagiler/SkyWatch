@@ -12,10 +12,10 @@ public class User {
         private Integer id;
 
         @Column(name = "first_name", nullable = false, length = 30)
-        private String firstname;
+        private String firstName;
 
         @Column(name = "last_name", nullable = false, length = 30)
-        private String lastname;
+        private String lastName;
 
 
         @Column(name = "user_name", nullable = false, length = 30)
@@ -27,13 +27,13 @@ public class User {
         @Column(nullable = false, unique = true, length = 64)
         private String email;
 
-        public User(Integer id, String firstname, String lastname, String email, String username, String password){
+        public User(Integer id, String firstName, String lastName, String email, String username, String password){
             this.id = id;
             this.username = username;
             this.password = password;
             this.email = email;
-            this.lastname = lastname;
-            this.firstname = firstname;
+            this.lastName = lastName;
+            this.firstName = firstName;
         }
 
         public User(){
@@ -73,19 +73,19 @@ public class User {
         }
 
         public String getFirstName() {
-            return firstname;
+            return firstName;
         }
 
         public void setFirstName(String firstname) {
-            this.firstname = firstname;
+            this.firstName = firstname;
         }
 
         public String getLastName() {
-            return lastname;
+            return lastName;
         }
 
         public void setLastName(String lastname) {
-            this.lastname = lastname;
+            this.lastName = lastname;
         }
     }
 
